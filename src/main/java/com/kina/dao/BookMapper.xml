@@ -21,6 +21,6 @@
     </select>
 
     <select id="queryAllBook" resultType="books">
-        select * form books;
+        select * from books;
     </select>
 </mapper>
