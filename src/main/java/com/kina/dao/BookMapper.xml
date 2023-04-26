@@ -23,4 +23,8 @@
     <select id="queryAllBook" resultType="books">
         select * from books;
     </select>
+
+    <select id="queryBookByName" parameterType="java.lang.String" resultType="books">
+        select * from books where bookName like concat('%',#{bookName},'%')
+    </select>
 </mapper>
