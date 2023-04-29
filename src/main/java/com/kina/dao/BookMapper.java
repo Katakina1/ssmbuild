@@ -15,6 +15,12 @@ public interface BookMapper {
     // 更新一本书
     int updateBook(Books books);
 
+    // 借阅
+    int borrowBook(@Param("bookId")int id);
+
+    // 归还
+    int returnBook(@Param("bookId")int id);
+
     // 查询一本书
     Books queryBookById(@Param("bookId") int id);
 

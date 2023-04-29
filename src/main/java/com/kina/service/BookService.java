@@ -15,6 +15,12 @@ public interface BookService {
     // 更新一本书
     int updateBook(Books books);
 
+    // 借阅一本书
+    int borrowBook(int id);
+
+    // 归还图书
+    int returnBook(int id);
+
     // 查询一本书
     Books queryBookById(int id);
 

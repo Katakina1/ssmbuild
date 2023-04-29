@@ -61,6 +61,10 @@
                         <td>${book.bookCounts}</td>
                         <td>${book.detail}</td>
                         <td>
+                            <a href="${pageContext.request.contextPath}/book/borrowBook/${book.bookID}">借阅</a>
+                            &nbsp; | &nbsp;
+                            <a href="${pageContext.request.contextPath}/book/returnBook/${book.bookID}">归还</a>
+                            &nbsp; | &nbsp;
                             <a href="${pageContext.request.contextPath}/book/toUpdate?id=${book.bookID}">修改</a>
                             &nbsp; | &nbsp;
                             <a href="${pageContext.request.contextPath}/book/deleteBook/${book.bookID}">删除</a>

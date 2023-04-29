@@ -59,6 +59,25 @@ public class BookController {
         return "redirect:/book/allBook";
     }
 
+    @RequestMapping("/borrowBook/{bookId}")
+    public String borrow(@PathVariable("bookId") int id) {
+        Books books = bookService.queryBookById(id);
+        if (books.getBookCounts() < 1) {
+            return "falsePage";
+        }
+        bookService.borrowBook(id);
+        return "truePage";
+    }
+
+    @RequestMapping("returnBook/{bookId}")
+    public String returnBook(@PathVariable("bookId")int id) {
+        int i = bookService.returnBook(id);
+        if (i > 0) {
+            return "bookTrueReturn";
+        }
+        return "bookFalseReturn";
+    }
+
     // 删除书籍
     @RequestMapping("/deleteBook/{bookId}")
     public String deleteBook(@PathVariable("bookId") int id) {

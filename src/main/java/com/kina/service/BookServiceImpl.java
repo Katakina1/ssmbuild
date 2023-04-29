@@ -30,6 +30,16 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
+    public int borrowBook(int id) {
+        return bookMapper.borrowBook(id);
+    }
+
+    @Override
+    public int returnBook(int id) {
+        return bookMapper.returnBook(id);
+    }
+
+    @Override
     public Books queryBookById(int id) {
         return bookMapper.queryBookById(id);
     }
