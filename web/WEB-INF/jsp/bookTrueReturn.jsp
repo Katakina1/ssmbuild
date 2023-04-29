@@ -12,7 +12,7 @@
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-归还成功 ！！
+<span style="font-size : 30px">归还成功 ！！</span>
 <div class="row">
     <div class="col-md-4 column">
         <%--                toAddBook--%>

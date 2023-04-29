@@ -13,7 +13,7 @@
 
 </head>
 <body>
-归还失败！
+<span style="font-size : 30px">归还出现错误，请重新尝试 ！！</span>
 <div class="row">
     <div class="col-md-4 column">
         <%--                toAddBook--%>

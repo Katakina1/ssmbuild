@@ -12,7 +12,7 @@
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-剩余库存不足！！，请耐心等待！
+<span style="font-size : 30px">库存不足，请耐心等待他人归还书籍！！！</span>
 <div class="row">
     <div class="col-md-4 column">
         <%--                toAddBook--%>
