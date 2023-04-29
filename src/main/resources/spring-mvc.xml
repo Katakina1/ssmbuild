@@ -20,4 +20,12 @@
         <property name="suffix" value=".jsp"/>
         <property name="prefix" value="/WEB-INF/jsp/"/>
     </bean>
+    <!--拦截器配置-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--/**包括这个请求下面的所有请求-->
+            <mvc:mapping path="/**/"/>
+            <bean class="com.kina.config.loginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

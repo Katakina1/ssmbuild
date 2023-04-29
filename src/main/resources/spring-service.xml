@@ -12,6 +12,9 @@
     <bean id="BookServiceImpl" class="com.kina.service.BookServiceImpl">
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
+    <bean id="UserServiceImpl" class="com.kina.service.UserServiceImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
     <!--声明式事务-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
